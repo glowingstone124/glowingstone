@@ -3,11 +3,11 @@ function navigate(){
     const navigatebtn = document.querySelector('.navigatebtn');
     const navigate = document.getElementById('navigation');
     if (navstat){
-        navigate.style.display = 'none'
+        navigate.classList.remove('display');
         navstat = false
     }
     else {
-        navigate.style.display = 'block'
+        navigate.classList.add('display');
         navstat = true
     }
 }
