@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15vw;
+    backdrop-filter: blur(15px);
+    height: 100vh;
+    position: fixed; 
+    overflow: auto;
+    display: none;
+    padding-top: 12vh;
+}
+ 
+li a {
+    display: block;
+    color: #d8d6d6;
+    padding: 16px 27px;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: left;
+}
+ 
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: #46b0ee38;
+    color: white;
+}
+li a.active {
+    background-color: #9ed8a04b;
+    color: white;
+}
+.navigatebtn{
+    border: 0;
+    outline: none;
+    position: fixed;
+    left: 4vh;
+    top: 4vh;
+    z-index: 9999;
+    border-radius: 50%;
+    background: #61a6ce9c;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
