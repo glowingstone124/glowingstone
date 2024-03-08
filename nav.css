@@ -2,17 +2,17 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 0vw;
+    width: 15vw;
     backdrop-filter: blur(15px);
     height: 100vh;
     position: fixed; 
     overflow: auto;
     padding-top: 12vh;
-    transition: width 0.5s;
+    transition: transform 0.5s;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 ul.display{
-    width: 15vw;
+    transform:translateX(-100%);
 }
 li a {
     display: block;
@@ -21,6 +21,7 @@ li a {
     text-decoration: none;
     font-size: 2em;
     text-align: left;
+    white-space:nowrap;
 }
  
 /* 鼠标移动到选项上修改背景颜色 */
@@ -44,5 +45,5 @@ li a.active {
     width: 70px;
     height: 70px;
     background-size: cover;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
